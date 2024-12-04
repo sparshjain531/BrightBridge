@@ -8,7 +8,7 @@
 }
 
 body {
-    overflow: auto;
+    overflow:auto;
 }
 
 .main-1 {
@@ -579,6 +579,7 @@ ul {
 .inner-content-7 {
     position: absolute;
     top: 4555px;
+    /* top: 360px; */
     left: 230px;
     width: 344px;
     height: 388px;
@@ -589,6 +590,7 @@ ul {
 .inner-content-8 {
     position: absolute;
     top: 4555px;
+    /* top: 360px; */
     left: 603px;
     width: 344px;
     height: 388px;
@@ -599,6 +601,7 @@ ul {
 .inner-content-9 {
     position: absolute;
     top: 4555px;
+    /* top: 360px; */
     left: 975px;
     width: 344px;
     height: 388px;
@@ -609,6 +612,7 @@ ul {
 .inner-content-10 {
     position: absolute;
     top: 4555px;
+    /* top: 360px; */
     left: 1339px;
     width: 344px;
     height: 388px;
@@ -619,6 +623,7 @@ ul {
 .inner-content-11 {
     position: absolute;
     top: 4986px;
+    /* top: 790px; */
     left: 232px;
     width: 344px;
     height: 388px;
@@ -629,6 +634,7 @@ ul {
 .inner-content-12 {
     position: absolute;
     top: 4986px;
+    /* top: 790px; */
     left: 605px;
     width: 344px;
     height: 388px;
@@ -639,6 +645,7 @@ ul {
 .inner-content-13 {
     position: absolute;
     top: 4986px;
+    /* top: 790px; */
     left: 977px;
     width: 344px;
     height: 388px;
@@ -649,6 +656,7 @@ ul {
 .inner-content-14 {
     position: absolute;
     top: 4986px;
+    /* top: 790px; */
     left: 1344px;
     width: 344px;
     height: 388px;
@@ -800,42 +808,16 @@ form {
     justify-content: space-between;
 }
 
-/* .input-area {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
-    width: 290px;
-}
-
-.input-area-1 {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    padding-bottom: 20px;
-    width: 625px;
-}
-
-::placeholder {
-    text-align: left;
-    font: normal normal 300 18px/60px Montserrat;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 0.8;
-    position: absolute;
-    left: 0;
-} */
-
 .input-area {
     background-color: transparent;
     border: none;
     border-bottom: 1px solid white;
     width: 290px;
-    text-align: left; /* Aligns text to the left */
-    font: normal normal 300 18px/60px Montserrat; /* Matches the placeholder font style */
+    text-align: left;
+    font: normal normal 300 18px/40px poppins;
     letter-spacing: 0px;
-    color: #FFFFFF; /* Ensures input text color matches placeholder */
-    outline: none; /* Removes focus outline for a cleaner look */
+    color: #FFFFFF;
+    outline: none;
   }
 
   .input-area-1 {
@@ -843,23 +825,23 @@ form {
     border: none;
     border-bottom: 1px solid white;
     width: 625px;
-    text-align: left; /* Aligns text to the left */
-    font: normal normal 300 18px/60px Montserrat; /* Matches the placeholder font style */
+    text-align: left; 
+    font: normal normal 300 18px/40px poppins; 
     letter-spacing: 0px;
-    color: #FFFFFF; /* Ensures input text color matches placeholder */
-    outline: none; /* Removes focus outline for a cleaner look */
+    color: #FFFFFF; 
+    outline: none; 
   }
   
   ::placeholder {
     text-align: left;
-    font: normal normal 300 18px/60px Montserrat;
+    font: normal normal 300 18px/40px poppins; 
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 0.8; /* Maintains placeholder transparency */
+    opacity: 0.8;
   }
   
   .input-area:focus {
-    border-bottom: 1px solid #FFFFFF; /* Optional: Highlight border on focus */
+    border-bottom: 1px solid #FFFFFF;
   }
 
 .btn {
@@ -867,7 +849,7 @@ form {
     height: 51px;
     opacity: 1;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -933,4 +915,14 @@ hr {
     opacity: 1;
 }
 
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
 
+  .animate.active {
+    opacity: 1; 
+    transform: translateY(0); 
+  }
