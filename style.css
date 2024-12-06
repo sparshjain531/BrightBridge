@@ -5,13 +5,15 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensures consistent sizing */
+    box-sizing: border-box;
+    /* Ensures consistent sizing */
 }
 
 body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  overflow-y: auto;
-  /* box-sizing: border-box; */
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+    overflow-y: auto;
+    /* box-sizing: border-box; */
 }
 
 .main-1 {
@@ -238,8 +240,8 @@ ul {
     gap: 40px;
 }
 
-sup{
-    font-size:small;
+sup {
+    font-size: small;
 }
 
 .inner-content-1 {
@@ -401,12 +403,12 @@ sup{
     letter-spacing: 0.1px;
     color: #262626;
     opacity: 1;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .sub-content-9 {
     position: absolute;
-    top: 2526px;
+    top: 2530px;
     left: 220px;
     width: 437px;
     height: 451px;
@@ -455,7 +457,7 @@ sup{
 
 .sub-content-10 {
     position: absolute;
-    top: 2526px;
+    top: 2530px;
     left: 736px;
     width: 437px;
     height: 451px;
@@ -470,7 +472,7 @@ sup{
 
 .sub-content-11 {
     position: absolute;
-    top: 2526px;
+    top: 2530px;
     left: 1252px;
     width: 437px;
     height: 451px;
@@ -485,7 +487,7 @@ sup{
 
 .sub-content-12 {
     position: absolute;
-    top: 3049px;
+    top: 3053px;
     left: 221px;
     width: 693px;
     height: 501px;
@@ -500,7 +502,7 @@ sup{
 
 .sub-content-13 {
     position: absolute;
-    top: 3049px;
+    top: 3053px;
     left: 996px;
     width: 693px;
     height: 501px;
@@ -515,7 +517,7 @@ sup{
 
 .sub-content-14 {
     position: absolute;
-    top: 3619px;
+    top: 3623px;
     left: 220px;
     width: 437px;
     height: 451px;
@@ -528,9 +530,13 @@ sup{
     border-radius: 5px;
 }
 
+.image-fix {
+    margin-left: 10px;
+}
+
 .sub-content-15 {
     position: absolute;
-    top: 3619px;
+    top: 3623px;
     left: 736px;
     width: 437px;
     height: 451px;
@@ -545,7 +551,7 @@ sup{
 
 .sub-content-16 {
     position: absolute;
-    top: 3619px;
+    top: 3623px;
     left: 1251px;
     width: 437px;
     height: 451px;
@@ -676,89 +682,454 @@ sup{
 .inner-content-7 {
     position: absolute;
     top: 4555px;
-    /* top: 360px; */
     left: 230px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-7::before {
+    content: "";
+    /* Pseudo-element for the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/Telecom.avif');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    /* Image is invisible initially */
+    transition: opacity 0.3s ease;
+    /* Smooth fade-in effect */
+    z-index: 1;
+    /* Keep image behind the text */
+}
+
+.inner-content-7:hover {
+    background-color: #000000;
+    /* Make the background black on hover */
+}
+
+.inner-content-7:hover::before {
+    opacity: 0.3;
+    /* Make the background image faintly visible */
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    /* Ensure text is above the background */
+    color: #000;
+    /* Black text initially */
+    transition: color 0.3s ease;
+    /* Smooth color change on hover */
+}
+
+.inner-content-7:hover .left {
+    color: #FFFFFF;
+    /* White text on hover */
+}
+
+.inner-content-7 .images {
+    transition: filter 0.3s ease;
+    /* Smooth icon transition */
+}
+
+.inner-content-7:hover .images {
+    filter: brightness(0) invert(1);
+    /* Turn icon white on hover */
 }
 
 .inner-content-8 {
     position: absolute;
     top: 4555px;
-    /* top: 360px; */
     left: 603px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-8::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/IT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-8:hover {
+    background-color: #000000;
+}
+
+.inner-content-8:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-8:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-8 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-8:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-9 {
     position: absolute;
     top: 4555px;
-    /* top: 360px; */
     left: 975px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-9::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/Financials.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-9:hover {
+    background-color: #000000;
+}
+
+.inner-content-9:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-9:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-9 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-9:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-10 {
     position: absolute;
     top: 4555px;
-    /* top: 360px; */
     left: 1339px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-10::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/oilgas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-10:hover {
+    background-color: #000000;
+}
+
+.inner-content-10:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-10:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-10 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-10:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-11 {
     position: absolute;
     top: 4986px;
-    /* top: 790px; */
     left: 232px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-11::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/hospitaleducation.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-11:hover {
+    background-color: #000000;
+}
+
+.inner-content-11:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-11:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-11 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-11:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-12 {
     position: absolute;
     top: 4986px;
-    /* top: 790px; */
     left: 605px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-12::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/bell.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-12:hover {
+    background-color: #000000;
+}
+
+.inner-content-12:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-12:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-12 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-12:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-13 {
     position: absolute;
     top: 4986px;
-    /* top: 790px; */
     left: 977px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-13::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/cloth.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-13:hover {
+    background-color: #000000;
+}
+
+.inner-content-13:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-13:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-13 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-13:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .inner-content-14 {
     position: absolute;
     top: 4986px;
-    /* top: 790px; */
     left: 1344px;
     width: 344px;
     height: 388px;
     background-color: #f0f0f8;
     border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.inner-content-14::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./assests/real\ estate.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.inner-content-14:hover {
+    background-color: #000000;
+}
+
+.inner-content-14:hover::before {
+    opacity: 0.3;
+}
+
+.left {
+    position: relative;
+    z-index: 2;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.inner-content-14:hover .left {
+    color: #FFFFFF;
+}
+
+.inner-content-14 .images {
+    transition: filter 0.3s ease;
+}
+
+.inner-content-14:hover .images {
+    filter: brightness(0) invert(1);
 }
 
 .flex {
@@ -784,70 +1155,6 @@ sup{
 .content-all {
     font-size: 19px;
     font-weight: 300;
-}
-
-.main-4-image-1 {
-    position: absolute;
-    top: 4555px;
-    left: 230px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-2 {
-    position: absolute;
-    top: 4555px;
-    left: 603px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-3 {
-    position: absolute;
-    top: 4555px;
-    left: 975px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-4 {
-    position: absolute;
-    top: 4555px;
-    left: 1339px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-5 {
-    position: absolute;
-    top: 4986px;
-    left: 232px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-6 {
-    position: absolute;
-    top: 4986px;
-    left: 605px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-7 {
-    position: absolute;
-    top: 4986px;
-    left: 977px;
-    width: 344px;
-    height: 388px;
-}
-
-.main-4-image-8 {
-    position: absolute;
-    top: 4986px;
-    left: 1344px;
-    width: 344px;
-    height: 388px;
 }
 
 .main-5 {
@@ -894,14 +1201,28 @@ sup{
     margin-top: 15px;
 }
 
-.content-13 {
+.main-5-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     position: absolute;
     top: 353px;
     left: 312px;
     width: 310px;
     height: 58px;
-    background: transparent url('./assests/Group\ 22013.svg') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background-color: #FFFFFF;
+    color: #cc63a4;
+    font-family: "poppins";
+    font-size: 20px;
+    border-radius: 50px;
+    padding-top: 3px;
+}
+
+.main-5-arrow{
+    height: 15px;
+    width: 31px;
+    background-image: url("./assests/right-arrow\ \(3\)-2.svg");
 }
 
 .main-6 {
@@ -924,7 +1245,7 @@ sup{
     gap: 10px;
     width: 627px;
     height: 454px;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     margin-left: 240px;
 }
 
@@ -959,7 +1280,7 @@ sup{
 form {
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 40px;
     position: relative;
 }
 
@@ -1011,6 +1332,7 @@ form {
     border-radius: 50px;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .heading-footer {
@@ -1031,12 +1353,12 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 110px;
+    gap: 150px;
     margin-bottom: 50px;
 }
 
 .office-1 {
-    width: 219px;
+    width: 221px;
     height: 107px;
 }
 
