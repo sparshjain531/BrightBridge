@@ -1187,7 +1187,7 @@ sup {
 
 .contact-footer {
     text-align: left;
-    font: normal normal 500 38px/48px Montserrat;
+    font: normal normal 500 38px/48px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
@@ -1195,7 +1195,7 @@ sup {
 
 .content-16 {
     text-align: left;
-    font: normal normal 300 22px/30px Montserrat;
+    font: normal normal 300 22px/30px Poppins;
     /* letter-spacing: 0.22px; */
     color: #FFFFFF;
     opacity: 1;
@@ -1231,7 +1231,7 @@ form {
     border-bottom: 1px solid white;
     width: 290px;
     text-align: left;
-    font: normal normal 300 18px/40px poppins;
+    font: normal normal 300 18px/40px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     outline: none;
@@ -1243,7 +1243,7 @@ form {
     border-bottom: 1px solid white;
     width: 625px;
     text-align: left;
-    font: normal normal 300 18px/40px poppins;
+    font: normal normal 300 18px/40px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     outline: none;
@@ -1251,7 +1251,7 @@ form {
 
 ::placeholder {
     text-align: left;
-    font: normal normal 300 18px/40px poppins;
+    font: normal normal 300 18px/40px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 0.8;
@@ -1274,14 +1274,14 @@ form {
 
 .heading-footer {
     text-align: left;
-    font: normal normal 400 19px/28px Montserrat;
+    font: normal normal 400 19px/28px Poppins;
     letter-spacing: 0.19px;
     color: #FFFFFF;
 }
 
 .content-footer {
     text-align: left;
-    font: normal normal 300 19px/28px Montserrat;
+    font: normal normal 300 19px/28px Poppins;
     letter-spacing: 0px;
     color: #FFFFFF;
 }
