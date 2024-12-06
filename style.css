@@ -1098,11 +1098,12 @@ sup {
     height: 643px;
     background: transparent url('./assests/Group\ 22016.png') 0% 0% no-repeat padding-box;
     opacity: 1;
+    margin-top: 15px;
 }
 
 .sub-content-18 {
     position: absolute;
-    top: 5596px;
+    top: 5611px;
     left: 493px;
     width: 934px;
     height: 164px;
@@ -1143,7 +1144,7 @@ sup {
     align-items: center;
     gap: 20px;
     position: absolute;
-    top: 353px;
+    top: 358px;
     left: 312px;
     width: 310px;
     height: 58px;
