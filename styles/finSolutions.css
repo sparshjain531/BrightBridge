@@ -12,7 +12,7 @@ body{
 }
 
 .logo{
-    background: transparent url("../assests/Mask\ group\ 27.png") 0% 0% no-repeat padding-box;
+    background: transparent url("./logo.png") 0% 0% no-repeat padding-box;
     mix-blend-mode: multiply;
     opacity: 1;
     width: 230px;
