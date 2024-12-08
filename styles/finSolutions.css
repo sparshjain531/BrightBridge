@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-image: url("../assests/Path\ 1350.svg");
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+
+.logo{
+    background: transparent url("../assests/Mask\ group\ 27.png") 0% 0% no-repeat padding-box;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    width: 230px;
+    height: 89px;
+}
+
+h1{
+    text-align: center;
+}
+
+.container{
+    font-family: "Poppins";
+    background-image: url("../assests/Path\ 1350.svg");
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-1{
+    background-color: #FFFFFF;
+    margin: 50px 0px;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Ensures the image scales proportionally */
+    transition: transform 0.5s ease; /* Smooth zoom effect */
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1); /* Zooms the image on hover */
+  }
+
+/* Remove border around accordion */
+/* .accordion-item {
+    border: none;
+} */
+
+/* Remove border of the accordion header */
+.accordion-header {
+    border: none;
+}
+
+/* Remove border from the button */
+.accordion-button {
+    border: none;
+    background-color: transparent; /* Optional: Make the background fully transparent */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+/* Remove border and background from the expanded button */
+.accordion-button:not(.collapsed) {
+    background-color: transparent; /* Optional: Transparent background for expanded item */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+/* Remove border from the accordion body */
+.accordion-body {
+    border-top: none;
+    padding: 1rem; /* Optional: Adjust padding as needed */
+}
+
+/* Makes the image smaller and responsive */
+.responsive-img {
+    width: 100%; /* Ensures the image adapts to its container */
+    max-width: 400px; /* Maximum width to prevent it from being too large */
+    height: auto; /* Keeps aspect ratio intact */
+    margin: 0 auto; /* Centers the image horizontally */
+    display: block; /* Centers the image inside its container */
+  }
+  
+  /* Adjust card width for smaller screens */
+  @media (max-width: 768px) {
+  
+    .responsive-img {
+      max-width: 100%; /* Adjusts image width for smaller screens */
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: black; /* Set text color to white when open */
+    /* Optional: Change background when accordion is open */
+  }
+  
+  /* Remove blue border when clicked */
+  .accordion-button:focus {
+    box-shadow: none; /* Removes the focus outline */
+  }
+  
+  /* Additional style for hover to keep consistent appearance */
+  .accordion-button:hover {
+    color: white;
+    background-color: #B94F91;
+  }
+  
+  
