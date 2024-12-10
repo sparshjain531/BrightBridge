@@ -1,115 +1,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    background-image: url("../assests/Path\ 1350.svg");
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.8;
+  color: #333;
+  background-color: #f9f6fb;
+  overflow-x: hidden;
+  font-family: "Poppins";
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
 .logo{
-    background: transparent url("./logo.png") 0% 0% no-repeat padding-box;
-    mix-blend-mode: multiply;
+  background: transparent url("./images/logo.png") 0% 0% no-repeat padding-box;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  width: 230px;
+  height: 89px;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* padding: 40px; */
+}
+
+/* Header */
+.header {
+  background-color: #cf78ae;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.header div {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #6e0446;
+}
+
+/* Main Content */
+.main-content {
+  margin: 40px 0;
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  color: #B94F91;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #B94F91;
+  padding-bottom: 10px;
+}
+
+.text p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.text ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}
+
+.text ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.text ul li strong {
+  color: #B94F91;
+}
+
+.image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #cf78ae;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
     opacity: 1;
-    width: 230px;
-    height: 89px;
+    transform: translateY(0);
+  }
 }
 
-h1{
+/* Responsive Design */
+@media (max-width: 1000px) {
+  /* .section {
+    flex-direction: column;
+  }
+
+  .section.reverse {
+    flex-direction: column;
+  }
+
+  .text {
     text-align: center;
+  }
+
+  .image {
+    text-align: center;
+  } */
+
+  .section{
+    margin: 25px 20px;
+  }
+  .content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
-.container{
-    font-family: "Poppins";
-    background-image: url("../assests/Path\ 1350.svg");
-    height: 100vh;
-    width: 100vw;
+@media (max-width: 1450px) {
+  /* .header h1 {
+    font-size: 2rem;
+  }
+
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  .text p,
+  .text ul li {
+    font-size: 1rem;
+  } */
+  .section{
+    margin: 25px 20px;
+  }
+
+  .margin{
+    margin: 0px 20px;
+  }
 }
 
-.container-1{
-    background-color: #FFFFFF;
-    margin: 50px 0px;
-    padding: 30px;
-    border-radius: 20px;
+@media (max-width: 767px) {
+  .navbar{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+  }
 }
 
-.card-img-top {
-    width: 100%;
-    height: auto; /* Ensures the image scales proportionally */
-    transition: transform 0.5s ease; /* Smooth zoom effect */
-  }
-  
-  .card-img-top:hover {
-    transform: scale(1.1); /* Zooms the image on hover */
+/* @media (max-width: 480px) {
+  .header h1 {
+    font-size: 2rem;
   }
 
-/* Remove border around accordion */
-/* .accordion-item {
-    border: none;
+  .text h2 {
+    font-size: 2rem;
+  }
+
+  .text p,
+  .text ul li {
+    font-size: 1rem;
+  }
 } */
-
-/* Remove border of the accordion header */
-.accordion-header {
-    border: none;
-}
-
-/* Remove border from the button */
-.accordion-button {
-    border: none;
-    background-color: transparent; /* Optional: Make the background fully transparent */
-    box-shadow: none; /* Remove box-shadow */
-}
-
-/* Remove border and background from the expanded button */
-.accordion-button:not(.collapsed) {
-    background-color: transparent; /* Optional: Transparent background for expanded item */
-    box-shadow: none; /* Remove box-shadow */
-}
-
-/* Remove border from the accordion body */
-.accordion-body {
-    border-top: none;
-    padding: 1rem; /* Optional: Adjust padding as needed */
-}
-
-/* Makes the image smaller and responsive */
-.responsive-img {
-    width: 100%; /* Ensures the image adapts to its container */
-    max-width: 400px; /* Maximum width to prevent it from being too large */
-    height: auto; /* Keeps aspect ratio intact */
-    margin: 0 auto; /* Centers the image horizontally */
-    display: block; /* Centers the image inside its container */
-  }
-  
-  /* Adjust card width for smaller screens */
-  @media (max-width: 768px) {
-  
-    .responsive-img {
-      max-width: 100%; /* Adjusts image width for smaller screens */
-    }
-  }
-
-  .accordion-button:not(.collapsed) {
-    color: black; /* Set text color to white when open */
-    /* Optional: Change background when accordion is open */
-  }
-  
-  /* Remove blue border when clicked */
-  .accordion-button:focus {
-    box-shadow: none; /* Removes the focus outline */
-  }
-  
-  /* Additional style for hover to keep consistent appearance */
-  .accordion-button:hover {
-    color: white;
-    background-color: #B94F91;
-  }
-  
-  
