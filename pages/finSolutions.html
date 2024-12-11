@@ -3,197 +3,396 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrightBridge - Financial Solutions</title>
+  <title>Document</title>
   <link rel="stylesheet" href="../styles/finSolutions.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container navbar">
-      <!-- <img class="margin" src="../styles/images/logo.png" alt="BrightBridge"> -->
-       <div class="logo margin"></div>
-      <div class="margin">BrightBridge Financial Solutions</div>
+  
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li><a href="#"><img src="../styles/images/logo.png" alt=""></a></li>
+      <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="#">About Us</a></li>
+      <li class="hideOnMobile"><a href="#">Services</a></li>
+      <li class="hideOnMobile"><a href="#">Our Team</a></li>
+      <li class="hideOnMobile"><a href="#">Contact us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+   <main>
+
+    <div class="container-1">
+      <div class="content-1 animate">Know More About</div>
+      <div class="content-2 animate">Financial Solutions</div>
     </div>
-  </header>
 
-  <main class="main-content">
-    <div class="container">
-      <!-- Content 1 -->
-      <section id="content-1" class="section">
-        <div class="content">
-          <div class="text">
-            <h2>Inbound & Outbound Investment Structuring</h2>
-            <p>Brightbridge provides customized solutions to facilitate cross-border investments with compliance, efficiency, and global best practices.</p>
-            <ul>
-              <li><strong>Tax Efficiency:</strong> Structuring investment well within relevant requirements to minimize tax cost to the investor.</li>
-              <li><strong>Regulatory Approvals:</strong> Full assistance with acquiring all required clearances for seamless functioning across pathways.</li>
-              <li><strong>Local Office Support:</strong> Establishing a local office and the ability to implement it.</li>
-              <li><strong>Global Connections:</strong> Tapping into an international network to facilitate cross-border partnerships and market reach.</li>
-            </ul>
-            <p>Brightbridge unlocks the complexities of global investments with expertise, precision, and sustainable growth.</p>
-          </div>
-          <div class="image">
-            <img src="../styles/images/inbound.jpeg" alt="Investment Structuring Illustration">
+    <hr class="animate" size="4">
+
+    <div id="content-1" class="card-1">
+      <div class="image-1 animate">
+        <div class="content-3 animate">Inbound & Outbound Investment Structuring</div>
+      </div>
+      <div class="heading animate">Brightbridge provides customized solutions to facilitate cross-border investments with compliance, efficiency, and global best practices.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Tax Efficiency</button>
+          <div class="accordion-content">
+            <p>Structuring investment well within relevant requirements to minimize tax cost to investor</p>
           </div>
         </div>
-      </section>
-
-      <!-- Content 2 -->
-      <section id="content-2" class="section reverse">
-        <div class="content">
-          <div class="image">
-            <img src="../styles/images/debt.jpeg" alt="Raising Capital Illustration">
-          </div>
-          <div class="text">
-            <h2>Raising Capital – Debt & Equity</h2>
-            <p>Brightbridge offers strategic assistance with equity and debt capital raises to ensure optimal funding and execution.</p>
-            <ul>
-              <li><strong>Appraisal Project Plans:</strong> Business plans to satisfy investors, banks, etc.</li>
-              <li><strong>Conversations with Funders:</strong> Fostering alignment with potential investors and lenders.</li>
-              <li><strong>Equity/Debt Structuring:</strong> Designing Win-Win Financing Solutions for Efficiency and Shareholder Value.</li>
-              <li><strong>PIPE Structures:</strong> Building flexible private investment in public equity.</li>
-              <li><strong>Legal Structuring:</strong> Creating solid structures for smooth transactions.</li>
-              <li><strong>Private Equity Advisory:</strong> From pre-deal transaction support to post-investment engagement.</li>
-            </ul>
-            <p>Brightbridge has a blend of financial mind and strong connections that assist businesses with funding needed to grow.</p>
+        <div class="accordion-item">
+          <button class="accordion-header">Regulatory Approvals</button>
+          <div class="accordion-content">
+            <p>Full assistance with acquiring all required clearances for seamless functioning across pathways.</p>
           </div>
         </div>
-      </section>
-
-      <!-- Content 3 -->
-      <section id="content-3" class="section">
-        <div class="content">
-          <div class="text">
-            <h2>Assurance – Controls & Audits</h2>
-            <p>Brightbridge provides assurance services to corporations, reinforcing internal controls, achieving compliance, and achieving effectiveness.</p>
-            <ul>
-              <li><strong>Internal Audits:</strong> Evaluating processes to identify risks and improve efficiency.</li>
-              <li><strong>Regulatory Audits:</strong> Ensuring compliance with statutory and regulatory requirements.
-              </li>
-              <li><strong>Internal Control Review:</strong> Control system optimization to mitigate risk and improve governance.</li>
-            </ul>
-            <p>The depth of Brightbridge's experience promotes transparency, accountability, and flexibility in constantly changing regulatory environment.</p>
-          </div>
-          <div class="image">
-            <img src="../styles/images/audit.jpeg" alt="Investment Structuring Illustration">
+        <div class="accordion-item">
+          <button class="accordion-header">Local Office Support</button>
+          <div class="accordion-content">
+            <p>Establishing a local office and the ability to implement it.</p>
           </div>
         </div>
-      </section>
-
-      <!-- Content 4 -->
-      <section id="content-4" class="section reverse">
-        <div class="content">
-          <div class="image">
-            <img src="../styles/images/compliance.jpg" alt="Raising Capital Illustration">
-          </div>
-          <div class="text">
-            <h2>Risk Management & Compliance</h2>
-            <p>Brightbridge provides risk management and compliance solutions that are customized to the common requirements of different kinds of enterprises so that they can cope with uncertainty, prevent risk and stay in operation as planned.</p>
-            <ul>
-              <li><strong>Risk Management Studies:</strong> Assessing risks and crafting mitigation strategies.
-              </li>
-              <li><strong>Risk Identification Matrices:</strong> Designing frameworks to evaluate and prioritize risks.</li>
-              <li><strong>Risk Identification Structures: </strong> Establishing processes for ongoing risk monitoring.</li>
-              <li><strong>Business Continuity Planning:</strong> Creating actionable plans to safeguard operations during disruptions.</li>
-            </ul>
-            <p>Through Brightbridge's experience, organisations can address, for instance, resilience, growth and compliance challenges.</p>
+        <div class="accordion-item">
+          <button class="accordion-header">Global Connections</button>
+          <div class="accordion-content">
+            <p>Tapping into an international network to facilitate cross-border partnerships and market reach.</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <!-- Content 5 -->
-      <section id="content-5" class="section">
-        <div class="content">
-          <div class="text">
-            <h2>Regulatory Compliances</h2>
-            <p>Brightbridge offers specialisation in compliance solutions to enable businesses to comply with the increasingly complex legal landscape and strike consistency in different areas:.</p>
-            <ul>
-              <li><strong>Tax Laws:</strong> Rules and regulations for direct and indirect taxes (including Goods and Services Tax (GST) and income tax).</li>
-              <li><strong>Transfer Pricing:</strong> Analysis and documentation to meet regulatory requirements.</li>
-              <li><strong>Company Law: </strong> Compliance with the Companies Act and governance standards.</li>
-              <li><strong>Exchange Control:</strong> Advisory on RBI guidelines and foreign exchange regulations.</li>
-              <li><strong>Company Secretarial:</strong> Support for corporate secretarial functions.</li>
-              <li><strong>Labour Laws: </strong> Adherence to employment and labour regulations.</li>
-              <li><strong>Other Regulations: </strong> Tailored solutions for industry-specific compliance.</li>
-            </ul>
-            <p>Brightbridge is the lead in continuous conformity, thereby reducing the risk and supporting the growth of business.</p>
-          </div>
-          <div class="image">
-            <img src="../styles/images/regulatory.jpg" alt="Investment Structuring Illustration">
-          </div>
-        </div>
-      </section>
-
-      <!-- Content 6 -->
-      <section id="content-6" class="section reverse">
-        <div class="content">
-          <div class="image">
-            <img src="../styles/images/MA.webp" alt="Raising Capital Illustration">
-          </div>
-          <div class="text">
-            <h2>Mergers & Acquisitions</h2>
-            <p>Brightbridge provides comprehensive M&A advisory services, ensuring seamless execution and maximum value at every transaction stage:.</p>
-            <ul>
-              <li><strong>Opportunity Scouting:</strong> Identifying prospects aligned with business goals.</li>
-              <li><strong>Valuations: </strong> Delivering accurate business assessments.</li>
-              <li><strong>Synergy Planning: </strong> Maximizing value through synergy identification.</li>
-              <li><strong>Due Diligence: </strong> Comprehensive risk and operational reviews.</li>
-              <li><strong>Integration Plans:</strong> Streamlining post-transaction integration.</li>
-              <li><strong>Definitive Agreements:</strong> Structuring and negotiating transaction terms.</li>
-              <li><strong>Transaction Closing:</strong> Ensuring timely and successful deal completion.</li>
-            </ul>
-            <p>Brightbridge makes M&A's much easier, driving transformative growth and strategic success.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Content 7 -->
-      <section id="content-7" class="section">
-        <div class="content">
-          <div class="text">
-            <h2>Cost & Margin Management</h2>
-            <p>Brightbridge provides cost reduction and profitability solutions in which businesses can thrive and evolve sustainably.</p>
-            <ul>
-              <li><strong>Cost Studies:</strong> Detailed reviews to find cost-saving opportunities.</li>
-              <li><strong>Cost Optimization: </strong> Custom strategies for expense reduction and efficiency.</li>
-              <li><strong>Shared Service Centers:</strong>  Establish central points for optimizing finances, legal services, and low-cost outsourcing - including e-sourcing and reverse auctions.</li>
-            </ul>
-            <p>Brightbridge assist companies to excel operationally and improve financial results.</p>
-          </div>
-          <div class="image">
-            <img src="../styles/images/cost.jpeg" alt="Investment Structuring Illustration">
-          </div>
-        </div>
-      </section>
-
-      <!-- Content 8 -->
-      <section id="content-8" class="section reverse">
-        <div class="content">
-          <div class="image">
-            <img src="../styles/images/MC.jpg" alt="Raising Capital Illustration">
-          </div>
-          <div class="text">
-            <h2>Management Consulting</h2>
-            <p>Brightbridge offers specialized consulting services to achieve growth, transformation, and operational excellence.</p>
-            <ul>
-              <li><strong>Strategic Consulting:</strong> Crafting strategies to achieve long-term goals.</li>
-              <li><strong>Transformation Services:</strong> Optimizing processes and enabling digital transformation.</li>
-              <li><strong>Data Migration:</strong> Seamless transfer and integration of critical data.</li>
-              <li><strong>Program Management:</strong> Efficiently managing complex projects.</li>
-              <li><strong>Corporate Governance: </strong> Enhancing transparency and accountability.</li>
-            </ul>
-            <p>Brightbridge assists businesses to change, innovate, and thrive in an everchanging system.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Additional sections follow the same pattern -->
+      <div class="heading animate">Brightbridge unlocks the complexities of global investments with expertise, precision and sustainable growth.</div>
     </div>
-  </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>Copyright 2024 BrightBridge. All right reserved.</p>
+    <hr size="4" class="animate">
+
+    <div id="content-2" class="card-1">
+      <div class="image-2 animate">
+        <div class="content-3 animate">Raising Capital – Debt & Equity</div>
+      </div>
+      <div class="heading animate">Brightbridge offers strategic assistance with equity and debt capital raises to ensure optimal funding and execution. <br> Appraisal project plans (business plans to satisfy investors, banks, etc.)</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Conversations with Funders</button>
+          <div class="accordion-content">
+            <p> Fostering alignment with potential investors and lenders.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Equity/Debt Structuring</button>
+          <div class="accordion-content">
+            <p> Designing Win-Win Financing Solutions for Efficiency and Shareholder Value
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">PIPE Structures</button>
+          <div class="accordion-content">
+            <p>Building flexible private investment in public equity.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Legal Structuring</button>
+          <div class="accordion-content">
+            <p>Creating solid structures for smooth transactions</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Private Equity Advisory</button>
+          <div class="accordion-content">
+            <p>From pre-deal transaction support to post-investment engagement.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Brightbridge has a blend of financial mind and strong connections that assist businesses with funding needed to grow.</div>
     </div>
-  </footer>
+
+    <hr size="4" class="animate">
+
+    <div id="content-3" class="card-1">
+      <div class="image-3 animate">
+        <div class="content-3 animate">Assurance – Controls & Audits</div>
+      </div>
+      <div class="heading animate">Brightbridge provides assurance services to corporations, reinforcing internal controls, achieving compliance, and achieving effectiveness.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Internal Audits</button>
+          <div class="accordion-content">
+            <p>Evaluating processes to identify risks and improve efficiency.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Regulatory Audits</button>
+          <div class="accordion-content">
+            <p>Ensuring compliance with statutory and regulatory requirements.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Internal Control Review</button>
+          <div class="accordion-content">
+            <p>
+              Control system optimization to mitigate risk and improve governance.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">The depth of Brightbridge's experience promotes transparency, accountability, and flexibility in constantly changing regulatory environment.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+    <div id="content-4" class="card-1">
+      <div class="image-4 animate">
+        <div class="content-3 animate">Risk Management & Compliance</div>
+      </div>
+      <div class="heading animate">Brightbridge provides risk management and compliance solutions that are customized to the common requirements of different kinds of enterprises so that they can cope with uncertainty, prevent risk and stay in operation as planned.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            Risk Management Studies</button>
+          <div class="accordion-content">
+            <p>Assessing risks and crafting mitigation strategies.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Risk Identification Matrices</button>
+          <div class="accordion-content">
+            <p>Designing frameworks to evaluate and prioritize risks.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Risk Identification Structures</button>
+          <div class="accordion-content">
+            <p>Establishing processes for ongoing risk monitoring.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Business Continuity Planning</button>
+          <div class="accordion-content">
+            <p>Creating actionable plans to safeguard operations during disruptions.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Through Brightbridge's experience, organisations can address, for instance, resilience, growth and compliance challenges.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+    <div id="content-5" class="card-1">
+      <div class="image-5 animate">
+        <div class="content-3 animate">Regulatory Compliances</div>
+      </div>
+      <div class="heading animate">Brightbridge offers specialisation in compliance solutions to enable businesses to comply with the increasingly complex legal landscape and strike consistency in different areas.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Tax Laws</button>
+          <div class="accordion-content">
+            <p>Rules and regulations for direct and indirect taxes (including Goods and Services Tax (GST) and income tax).</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Transfer Pricing</button>
+          <div class="accordion-content">
+            <p>Analysis and documentation to meet regulatory requirements.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Company Law</button>
+          <div class="accordion-content">
+            <p>Compliance with the Companies Act and governance standards.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Exchange Control</button>
+          <div class="accordion-content">
+            <p>Advisory on RBI guidelines and foreign exchange regulations.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Company Secretarial</button>
+          <div class="accordion-content">
+            <p>Support for corporate secretarial functions.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Labour Laws</button>
+          <div class="accordion-content">
+            <p>Adherence to employment and labour regulations.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Other Regulations</button>
+          <div class="accordion-content">
+            <p>Tailored solutions for industry-specific compliance.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Brightbridge is the lead in continuous conformity, thereby reducing the risk and supporting the growth of business.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+    <div id="content-6" class="card-1">
+      <div class="image-6 animate">
+        <div class="content-3 animate">Mergers & Acquisitions</div>
+      </div>
+      <div class="heading animate">Brightbridge provides comprehensive M&A advisory services, ensuring seamless execution and maximum value at every transaction stage.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Opportunity Scouting</button>
+          <div class="accordion-content">
+            <p>Identifying prospects aligned with business goals.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Valuations</button>
+          <div class="accordion-content">
+            <p>Delivering accurate business assessments.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Synergy Planning</button>
+          <div class="accordion-content">
+            <p>Maximizing value through synergy identification.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Due Diligence</button>
+          <div class="accordion-content">
+            <p>Comprehensive risk and operational reviews.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">Integration Plans</button>
+          <div class="accordion-content">
+            <p>Streamlining post-transaction integration.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Definitive Agreements</button>
+          <div class="accordion-content">
+            <p>Structuring and negotiating transaction terms.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Transaction Closing</button>
+          <div class="accordion-content">
+            <p>Ensuring timely and successful deal completion.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Brightbridge makes M&A's much easier, driving transformative growth and strategic success.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+    <div id="content-7" class="card-1">
+      <div class="image-7 animate">
+        <div class="content-3 animate">Cost & Margin Management</div>
+      </div>
+      <div class="heading animate">Brightbridge provides cost reduction and profitability solutions in which businesses can thrive and evolve sustainably.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Cost Studies</button>
+          <div class="accordion-content">
+            <p>Detailed reviews to find cost-saving opportunities.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Cost Optimization</button>
+          <div class="accordion-content">
+            <p>Custom strategies for expense reduction and efficiency.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Shared Service Centers</button>
+          <div class="accordion-content">
+            <p>Establish central points for optimizing finances, legal services, and low-cost outsourcing - including e-sourcing and reverse auctions.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Brightbridge assist companies to excel operationally and improve financial results.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+    <div id="content-8" class="card-1">
+      <div class="image-8 animate">
+        <div class="content-3 animate">Management Consulting</div>
+      </div>
+      <div class="heading animate">Brightbridge offers specialized consulting services to achieve growth, transformation, and operational excellence.</div>
+
+      <div class="accordion-container animate">
+        <div class="accordion-item">
+          <button class="accordion-header">Strategic Consulting</button>
+          <div class="accordion-content">
+            <p>Crafting strategies to achieve long-term goals.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Transformation Services</button>
+          <div class="accordion-content">
+            <p>Optimizing processes and enabling digital transformation.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Data Migration</button>
+          <div class="accordion-content">
+            <p>Seamless transfer and integration of critical data.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Program Management</button>
+          <div class="accordion-content">
+            <p>Efficiently managing complex projects.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">Corporate Governance</button>
+          <div class="accordion-content">
+            <p>Enhancing transparency and accountability.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="heading animate">Brightbridge assists businesses to change, innovate, and thrive in an everchanging system.</div>
+    </div>
+
+    <hr size="4" class="animate">
+
+   </main>
+
+<footer class="animate">
+  <div class="end">Copyright 2024 BrightBridge. All right reserved.</div>
+</footer>
+
+<script src="../script/finSolution.js"></script>
 </body>
 </html>
+
